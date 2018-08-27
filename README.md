@@ -27,14 +27,15 @@ Default unit information based on Json feed:
 Unit info in sprites.js:
 
 item = {};
-        item ["x"] = 2;                 Cordinates in table
-        item ["y"] = 15;
-        item ["speed"] = 1;             Unit speed determines which unit comes next in row
-        item ["movement"] = 7;          Maximum movement what a unit can take
-        item ["player"] = 1;            Id for the player who controls the unit
+
+item ["x"] = 2;                // Cordinates in table
+item ["y"] = 15;
+item ["speed"] = 1;             //Unit speed determines which unit comes next in row
+item ["movement"] = 7;          //Maximum movement what a unit can take
+item ["player"] = 1;            //Id for the player who controls the unit
         
         
-sprites.push(item);	                    Push the item to the feed
+sprites.push(item);	                   // Push the item to the feed
 
 
 
