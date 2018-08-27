@@ -1,0 +1,98 @@
+<html>
+<head>
+
+
+
+
+
+<script src='jquery.js'></script>
+<script src='sprites.js'></script>
+<script src='events.js'></script>
+
+
+  <link rel="stylesheet" href="playfield.css">
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='content'>
+<section id="lab">
+
+    <article>
+
+	
+	
+<script >	
+playfieldWidth=15;
+playfieldHeight=11;	
+playfieldSize=playfieldWidth*playfieldHeight;
+
+
+	
+row=0;
+col=0;
+	
+for(i=0;i<playfieldSize;i++){	
+if(i%playfieldWidth==0){row++;}
+col=(row*playfieldWidth)-i;
+
+
+
+if(i==0){margin_left=35;}
+else if(i%(playfieldWidth*2)==0){margin_left=35;}
+else if(i%playfieldWidth==0){margin_left=0;}
+
+
+
+else{margin_left=-33;}
+$('article').append(	
+      '  <div class="lab_item" id="'+row+'_'+col+'"  style="margin-left:'+margin_left+'">		'+
+       ' <div class="hexagon hexagon2" >'+
+        '    <div class="hexagon-in1" >'+
+         '       <div class="hexagon-in2" >'+
+          '      </div>'+
+           '  </div>'+
+         '</div>'+
+         '</div>'
+		 );
+
+}
+
+
+$('.lab_item:nth-child(n+'+playfieldWidth+')').css({'margin-top':'-55px'});
+
+$('section').width(playfieldWidth*80-30);
+
+$('#content').width(playfieldWidth*80-30);
+</script >	
+
+         
+          
+	</article>
+</section>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
