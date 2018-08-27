@@ -21,6 +21,9 @@ Default unit information based on Json feed:
 
 
 //////////////////////////////////////////
+
+
+
 Unit info in sprites.js:
 
 item = {};
