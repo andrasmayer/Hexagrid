@@ -1,5 +1,11 @@
 Basic Hexa grid for game developers with dinamic fieldsize, pathfinding routine, unit movements, unit speed and player indicator.
 
+
+Actually i mad this lib to make browser version of  Heroes Of Might And Magic 3 .
+
+
+
+
 Installation
 
 
